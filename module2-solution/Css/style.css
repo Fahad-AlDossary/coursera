@@ -1,1 +1,83 @@
 
+/*CSS style sheet*/ 
+body {
+margin: 0;
+padding: 0;
+background-color:#706969cc;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+section {
+    background-color: aqua;
+    padding: 1%;
+    margin: 1%;
+    border: black solid 1px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    background-color: black;
+    color: cornsilk;
+    text-align: center;
+}
+
+div {
+    border: black solid 2px;
+}
+
+/* Desktop, Tablet, Mobile Media*/
+
+/* Desktop */
+
+@media (min-width:992px) {
+    .col-lg-3 
+    {
+    float: left;
+    }
+    section {
+        background-color: aqua;
+        padding: 1%;
+        margin: 1%;
+        border: black solid 1px;
+        width: 30%;
+        }
+
+}
+
+/* Tablet */
+
+@media (min-width:768px) and (max-width: 991px) {
+   .col-md-2 {
+       display: inline-block;
+        width: 45%;
+        position: relative;
+    }
+    .col-md-1{
+        clear: both;
+        position: relative;;
+    }
+    section {
+        background-color: red;
+        padding: 1%;
+        margin: 1%;
+        border: black solid 1px;
+        box-sizing: border-box;
+    }
+
+}
+/* Mobile */
+
+@media (max-width:767px) {
+    section {
+        background-color:#ffffff;
+        padding: 1%;
+        margin: 1%;
+        border: black solid 1px;
+    }
+}
